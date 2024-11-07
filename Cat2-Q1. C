@@ -1,0 +1,35 @@
+/*
+Name Ivy kemboi
+Reg no CT101/G/24882/24
+Date 7/11/2024
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+struct employee {
+	char name[25];
+	int ID;
+	char department [20];
+	float salary;
+	char email[50];
+	
+}
+ employee1;
+
+int main(){
+	strcpy(employee1.name,"John Doe");
+	employee1.ID=12345;
+	strcpy(employee1.department,"Human Resources");
+	employee1.salary=55000.50;
+	strcpy(employee1.email,"john.doe@company.com");
+	
+	printf("name:%s \n",employee1.name);
+	printf("ID:%d \n",employee1.ID);
+	printf("departments:%s \n",employee1.department);
+	printf("salary:%f \n",employee1.salary);
+	printf("email:%s \n",employee1.email);
+	
+	return 0;
+	
+}
