@@ -1,0 +1,35 @@
+/*
+name Ivy kemboi
+reg no CT101/G/24882/24
+date 7/11/2024
+*/
+
+
+#include<stdio.h>
+
+int main(){
+	float hourly_wages,hours_worked,gross_pay,taxes,net_pay;
+	
+	printf("Enter hours worked");
+	scanf("%f",&hours_worked);
+	printf("Enter hourly wages");
+	scanf("%f",&hourly_wages);
+	
+	if(hours_worked<=400){
+		gross_pay=hours_worked*hourly_wages;
+	}else{
+		gross_pay=(hourly_wages*40)+(hours_worked-40)*hourly_wages*0.15;
+	}
+	if(gross_pay<=400){
+		taxes=gross_pay*0.15;
+	}else{
+		taxes=600*0.15+(gross_pay-600)*0.20;
+		net_pay=gross_pay-taxes;
+	}
+	printf("gross pay%f",gross_pay);
+	printf("taxes%f",taxes);
+	printf("net pay%f",net_pay);
+	return 0;
+}
+	
+	
